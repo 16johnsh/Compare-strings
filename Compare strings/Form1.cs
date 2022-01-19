@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Compare_strings
 {
-    public partial class Form1 : Form
+    public partial class StringComparer : Form
     {
-        public Form1()
+        public StringComparer()
         {
             InitializeComponent();
+        }
+
+        private void lbly_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StringComparer_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
