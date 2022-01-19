@@ -73,6 +73,7 @@
             this.txtx.Name = "txtx";
             this.txtx.Size = new System.Drawing.Size(427, 20);
             this.txtx.TabIndex = 3;
+            this.txtx.TextChanged += new System.EventHandler(this.txtx_TextChanged);
             // 
             // txty
             // 

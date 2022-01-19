@@ -26,5 +26,18 @@ namespace Compare_strings
         {
 
         }
+
+        private void txtx_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        public bool validateUserInput(string userInput)
+        {
+            if(userInput.Length == 0)
+            {
+                Message = "you need to enter a string";
+            }
+        }
     }
 }
