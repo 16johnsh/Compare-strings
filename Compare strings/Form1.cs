@@ -36,7 +36,7 @@ namespace Compare_strings
         {
             if(userInput.Length == 0)
             {
-                Message = "you need to enter a string";
+                
             }
         }
     }
