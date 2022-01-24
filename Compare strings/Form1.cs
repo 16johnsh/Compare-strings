@@ -17,6 +17,43 @@ namespace Compare_strings
             InitializeComponent();
         }
 
+        public bool validateUserInput(string userInput)
+        {
+            bool valid = true;
+            if (userInput.Length == 0)
+            {                
+                valid = false;
+            }
+
+            return valid;
+        }
+        
+        private void txtx_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void txty_TextChanged(object sender, EventArgs e)
+        {
+            
+        }       
+
+        private void btnCalculate_Click(object sender, EventArgs e)
+        {
+            string inputX = txtx.Text;
+            string inputY = txty.Text;
+
+            if (validateUserInput(inputX) == false)
+            {
+                MessageBox.Show("Please enter a value for stringX");
+            }
+
+            if (validateUserInput(inputY) == false)
+            {
+                MessageBox.Show("Please enter a value for stringY");
+            }
+        }
+
         private void lbly_Click(object sender, EventArgs e)
         {
 
@@ -26,29 +63,6 @@ namespace Compare_strings
         {
 
         }
-
-        private void txtx_TextChanged(object sender, EventArgs e)
-        {
-            validateUserInput();
-        }
-
-        private void txty_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        public bool validateUserInput(string userInput)
-        {
-            bool valid = true;
-            if(userInput.Length == 0)
-            {
-                MessageBox.Show("Please enter a string");
-                valid = false;
-            }
-
-            return valid;
-        }
-
-        
     }
+
 }
