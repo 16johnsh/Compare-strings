@@ -29,15 +29,26 @@ namespace Compare_strings
 
         private void txtx_TextChanged(object sender, EventArgs e)
         {
-            
+            validateUserInput();
+        }
+
+        private void txty_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         public bool validateUserInput(string userInput)
         {
+            bool valid = true;
             if(userInput.Length == 0)
             {
-                
+                MessageBox.Show("Please enter a string");
+                valid = false;
             }
+
+            return valid;
         }
+
+        
     }
 }

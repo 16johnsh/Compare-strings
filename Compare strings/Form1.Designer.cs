@@ -81,6 +81,7 @@
             this.txty.Name = "txty";
             this.txty.Size = new System.Drawing.Size(427, 20);
             this.txty.TabIndex = 3;
+            this.txty.TextChanged += new System.EventHandler(this.txty_TextChanged);
             // 
             // btnCalculate
             // 
